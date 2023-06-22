@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button style="background: red;"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titulo">Bienvenido(a) {{user.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-card color="secondary" *ngIf="entradaActual">
+    <ion-card-content class="contenido">
+      <p class="contenido" id="fechaTexto">{{entradaActual.fechaTexto}}</p>
+      <h3>Ingresar Actividades</h3>
+      <ion-textarea class="txto" rows="15" [(ngModel)] = "entradaActual.texto">
+      </ion-textarea>
+    </ion-card-content>
+    
+    <ion-button class="titulo"   expand="block" (click)="guardar(entradaActual)">
+      Guardar Informacion
+    </ion-button>
+  </ion-card>
+
+
+  <div class="imagenesdesplegables">			
+     <br> <li><img src="assets/icon/x4.png" width="700px" height="500px"></li>     
+  </div>
+</ion-content>
+

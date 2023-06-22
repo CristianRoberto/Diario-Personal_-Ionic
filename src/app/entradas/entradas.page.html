@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Registros Diarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <h1 class="h1">seleccionar registro</h1>
+  <ion-item color="secondary" *ngFor="let entrada of entradas" (click)="irDetalle(entrada)">
+      <ion-label class="efectodiario" >
+        <h2>{{entrada.fechaTexto}}</h2>
+        <p>{{entrada.texto}}</p>
+      </ion-label>
+  </ion-item>
+</ion-content>

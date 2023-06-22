@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="titulo">Registrar Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-card color="primary">
+    <ion-card-header class="header">
+      <ion-card-title>Crear Nuevo Usuario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+        <ion-item color="dark" >
+          <ion-label position="floating">Nombre Usuario</ion-label>
+          <ion-input color="secondary" formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item color="dark" >
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input color="secondary" formControlName="password" type="password" ></ion-input>
+        </ion-item>
+        <ion-item color="dark" >
+          <ion-label position="floating">Confirmar contraseña</ion-label>
+          <ion-input color="secondary" formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+        <br>
+
+     
+
+      <div class="ingresar">
+      <ion-button (click)="guardar()">Guardar Usuario
+        </ion-button>
+      </div>
+      </form>
+    </ion-card-content>
+  </ion-card>
+ 
+  <div class="imagenesdesplegables">			
+    <ul>
+     <br><br> 
+     <li><img src="assets/icon/x4.png" width="800px" height="600px"></li>     
+    </ul>
+  </div>
+</ion-content>

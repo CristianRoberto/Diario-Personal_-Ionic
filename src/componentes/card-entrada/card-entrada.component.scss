@@ -1,0 +1,30 @@
+ion-card{
+    height: 95%;
+}
+
+
+ion-textarea{
+    font-size: 18px;
+}
+
+#fechaTexto{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.h1{
+    color: black;
+}
+
+
+.guardar{
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px){
+.guardar{
+    margin-top: -80px;
+    height: 50px;
+}
+}

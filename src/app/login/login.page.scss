@@ -1,0 +1,77 @@
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+        /* IMAGENES DESPLEGABLES */
+        .imagenesdesplegables {
+            width: 100%;
+            height: 300px;
+            margin: auto;
+            overflow: hidden;
+
+        }
+    
+        .imagenesdesplegables ul {
+            display: flex;
+            padding: 0;
+            width: 500%;
+
+            animation: cambio 15s infinite alternate linear;
+        }
+    
+        .imagenesdesplegables li{
+            width: 190%;
+            list-style: none;
+        }
+    
+        .imagenesdesplegables img{
+            width: 100%; 
+            height: 280px;      
+
+        }
+    
+        @keyframes cambio {
+            0% { margin-left: 0; }
+            15% { margin-left: 0;}
+    
+            20%{ margin-left: -100%;}
+            35%{ margin-left: -100%;}
+        
+            40%{ margin-left: -200%;}
+            60%{ margin-left: -200%;}
+    
+            65%{ margin-left: -300%;}
+            80%{ margin-left: -300%;}
+            
+            85%{ margin-left: -400%;}
+            100%{ margin-left: -400%;}	
+        }
+
+         .inicio{
+
+            background: rgb(0, 0, 0);
+           text-align: center;
+        }
+
+    
+        .ingresar{
+            font-size: 50px;
+            background: #000000;
+            text-align: center;
+            height: 70px;
+            margin-top: -20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .ingresar ion-button{
+            font-size: 30px;
+            height: 74px;
+            margin-top: -4px;
+            box-shadow: 0 0 115px 19px rgb(255, 255, 255);
+
+        }
+
+        .footer{
+            background: #000000;
+        }

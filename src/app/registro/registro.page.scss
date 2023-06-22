@@ -1,0 +1,52 @@
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.header ion-card-title{
+    color: rgb(136, 234, 245);
+    text-align: center;
+    font-size: 30px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ingresar{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background: #000000;
+    text-align: center;
+    height: 70px;
+    margin-top: -20px;
+}
+.ingresar ion-button{
+    background: black;
+    font-size: 25px;
+    height: 73px;
+    margin-top: -3px;
+    box-shadow: 0 0 115px 19px rgb(255, 255, 255);
+}
+
+.final{
+    color: white;
+}
+
+.imagenesdesplegables{
+    text-align: center;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width:600px){
+    .imagenesdesplegables img{
+        height: 60%;
+        
+    }
+
+    .ingresar ion-button{
+        font-size: 22px;
+        height: 73px;
+        margin-top: -3px;
+        box-shadow: 0 0 115px 19px rgb(255, 255, 255);
+    }
+   
+}

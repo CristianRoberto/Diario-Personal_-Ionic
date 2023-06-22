@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="titulo">DIARIO PERSONAL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-card class="reo" color="primary">
+    <div class="imagenesdesplegables" >			
+      <ul>
+        <li><img src="assets/icon/x4.png" alt=""></li>     
+        <li><img src="assets/icon/movilpantalla.png" alt=""></li>
+        <li><img src="assets/icon/pantallaweb.png" alt=""></li>
+        <li><img src="assets/icon/padre.png" alt=""></li>
+        <li><img src="assets/icon/x4.png" alt=""></li>     
+
+      </ul>
+    </div>
+
+      <ion-card-header class="inicio">
+        <ion-card-title style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 50px;">Login</ion-card-title>
+      </ion-card-header>
+
+      <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">BIENVENIDOS</h1>
+      <ion-card-content>
+        <form [formGroup]="formularioLogin" >
+          <ion-item class="formulario">
+            <ion-label position="floating">Ingrese su Usuario</ion-label>
+            <ion-input formControlName="nombre"></ion-input>
+          </ion-item>
+          <ion-item class="formulario">
+            <ion-label position="floating">Ingrese Contraseña</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+
+        <div class="ingresar">
+        <ion-button  (click)="ingresar()" >
+
+          Ingresar
+        </ion-button>
+        </div>
+
+        <br>
+        <li><img src="assets/icon/autor.png" alt=""></li>
+        <br>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
+  <ion-footer class="footer">
+    <ion-toolbar color="primary" >
+      <ion-buttons slot="end">
+        <ion-button class="pantallaregistro" style="font-size: 25px;"  [routerLink]="['/registro']">Registrarse</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+
+
+

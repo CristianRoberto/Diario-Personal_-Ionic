@@ -1,0 +1,53 @@
+<ion-split-pane contentId="main">
+  <ion-menu side="start" menuId="first" contentId="main"  >
+
+    <ion-header>
+      <ion-toolbar color="primary" class="h3">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="primary">
+      <ion-list class="xy" >      
+           <ion-menu-toggle auto-hide="false" *ngFor="let pagina of paginas; let i = index">
+          <ion-item class="iten" color="secondary" (click)="cambiarIndiceSeleccionado(i)" routerDirection="root" [routerLink]="[pagina.url]"
+            lines="none" detail="false" [class.selected]="indiceSeleccionado == i" >
+            <ion-icon slot="start" [name]="pagina.icono + '-outline'"></ion-icon>
+            <ion-label>{{pagina.titulo}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        
+          <ion-item class="boton"    (click)="salir()">
+            <ion-icon  slot="start" [name]="'exit-outline'"></ion-icon>
+            <ion-label>Salir</ion-label>
+          </ion-item>
+      </ion-list>
+
+
+      <h3 class="h3">Siguenos En Nuestras Redes Sociales</h3>
+      <div class="socialgeneral">
+        <a  href="https://www.facebook.com/sistemasManabi26">
+        <ion-icon class="social" name="logo-facebook" color="light" >
+        </ion-icon>
+      </a>				
+
+      <a  href="https://www.instagram.com/sistemas_manabi26">
+        <ion-icon class="socialinstagran" name="logo-instagram" color="light" >
+        </ion-icon>
+      </a>	
+
+      <a  href="https://www.youtube.com/channel/UCqOFWDb8SbCYaq4DXH9QEDw">
+        <ion-icon class="socialyoutube" name="logo-youtube" color="light" >
+        </ion-icon>
+      </a>
+      </div>
+
+    </ion-content>
+
+
+
+
+  </ion-menu>
+  <ion-router-outlet id="main" main></ion-router-outlet>
+</ion-split-pane>
